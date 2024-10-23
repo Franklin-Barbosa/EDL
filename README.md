@@ -11,12 +11,16 @@ Repositório criado para a disciplina de Estrutura de Dados Lineares (EDL), onde
     ```bash
     cd NOME DA PASTA
     ```
-3. Compile o arquivo Java:
+3. Compile os arquivos .java de forma multipla:
     ```bash
-    javac ARQUIVO.java
+    javac *.java
+    ```
+    3.1 Ou compile os arquivos .java individualmente:
+    ```bash
+    javac NOME DO CADA ARQUIVO.java
     ```
 4. Execute o arquivo compilado:
     ```bash
-    java ARQUIVO
+    java testePilha
     ```
-5. Siga as instruções exibidas no terminal para interagir com a estrutura de dados.
+
