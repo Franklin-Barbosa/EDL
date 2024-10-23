@@ -17,7 +17,7 @@ Repositório criado para a disciplina de Estrutura de Dados Lineares (EDL), onde
     ```
     3.1 Ou compile os arquivos .java individualmente:
     ```bash
-    javac NOME DO CADA ARQUIVO.java
+    javac NOME DE CADA ARQUIVO.java
     ```
 4. Execute o arquivo compilado:
     ```bash
