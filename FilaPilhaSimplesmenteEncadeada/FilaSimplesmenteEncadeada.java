@@ -1,6 +1,6 @@
 public class FilaSimplesmenteEncadeada {
-    private Nodo frente;
-    private Nodo tras;
+    private Nodo frente; // ponteiro para inicio da fila
+    private Nodo tras; // ponteiro para fim da fila
     private int tamanho;
 
     public FilaSimplesmenteEncadeada() {
@@ -9,6 +9,7 @@ public class FilaSimplesmenteEncadeada {
         this.tamanho = 0;
     }
 
+    // adicionar elemento no final da fila
     public void enqueue(Object o) {
         Nodo novoNodo = new Nodo(o);
         if (tras != null) {
@@ -20,7 +21,8 @@ public class FilaSimplesmenteEncadeada {
         }
         tamanho++;
     }
-
+    
+    // remover elemento na frente da fila
     public Object dequeue() {
         if (isEmpty()) {
             throw new FilaVaziaException("A fila está vazia.");
@@ -30,7 +32,7 @@ public class FilaSimplesmenteEncadeada {
         if (frente == null) {
             tras = null;
         }
-        tamanho--;
+        tamanho = tamanho - 1;
         return dado;
     }
 
