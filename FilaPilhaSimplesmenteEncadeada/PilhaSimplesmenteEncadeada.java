@@ -11,7 +11,7 @@ public class PilhaSimplesmenteEncadeada {
         Nodo novoNodo = new Nodo(o);
         novoNodo.proximo = topo;
         topo = novoNodo;
-        tamanho++;
+        tamanho = tamanho + 1;;
     }
 
     public Object pop() {
@@ -20,7 +20,7 @@ public class PilhaSimplesmenteEncadeada {
         }
         Object dado = topo.dado;
         topo = topo.proximo;
-        tamanho--;
+        tamanho = tamanho - 1;
         return dado;
     }
 
