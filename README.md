@@ -21,6 +21,6 @@ Repositório criado para a disciplina de Estrutura de Dados Lineares (EDL), onde
     ```
 4. Execute o arquivo compilado:
     ```bash
-    java testePilha
+    java NOME DO ARQUIVO
     ```
 
