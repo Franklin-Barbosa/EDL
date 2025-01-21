@@ -1,4 +1,4 @@
-public class testePilha {
+public class testePilhaVector {
 
 	public static void main(String[] args) {		
 		PilhaVector pp=new PilhaVector();
