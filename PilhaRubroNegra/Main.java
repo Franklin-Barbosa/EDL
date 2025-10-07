@@ -1,5 +1,4 @@
 package PilhaRubroNegra;
-
 import java.util.Scanner;
 
 public class Main {
@@ -15,7 +14,9 @@ public class Main {
         Pilha pilha = new Pilha(tamanho);
 
         while (op != 0) {
-            System.out.print("Comandos:\n[1] Push Red\n[2] Push Black\n[3] Pop Red\n[4] Pop Black\n[5] Top Red\n[6] Top Black\n[7] Size\n[0] Sair\n-> ");
+            System.out.print(
+                "Comandos:\n[1] Push Red\n[2] Push Black\n[3] Pop Red\n[4] Pop Black\n[5] Top Red\n[6] Top Black\n[7] Size\n[0] Sair\n-> "
+            );
             op = sc.nextInt();
 
             switch (op) {
@@ -28,7 +29,6 @@ public class Main {
                         } else {
                             System.out.println(pilha.getPilha()[i]);
                         }
-
                     }
                     System.out.println();
                     break;
@@ -41,7 +41,6 @@ public class Main {
                         } else {
                             System.out.println(pilha.getPilha()[i]);
                         }
-
                     }
                     System.out.println();
                     break;
@@ -55,13 +54,12 @@ public class Main {
                         } else {
                             System.out.println(pilha.getPilha()[i]);
                         }
-
                     }
                     System.out.println();
-                } catch (EPilhaVazia e) {
-                    System.out.println("\nPilha Vermelha vazia!\n");
-                }
-                break;
+                    } catch (EPilhaVazia e) {
+                        System.out.println("\nPilha Vermelha vazia!\n");
+                    }
+                    break;
                 case 4:
                     try {
                     pilha.popBlack();
@@ -72,28 +70,27 @@ public class Main {
                         } else {
                             System.out.println(pilha.getPilha()[i]);
                         }
-
                     }
                     System.out.println();
-                } catch (EPilhaVazia e) {
-                    System.out.println("\nPilha Preta vazia!\n");
-                }
+                    } catch (EPilhaVazia e) {
+                        System.out.println("\nPilha Preta vazia!\n");
+                    }
 
-                break;
+                    break;
                 case 5:
                     try {
                     System.out.println("\n" + pilha.topRed() + "\n");
-                } catch (EPilhaVazia e) {
-                    System.out.println("\nPilha Vermelha vazia!\n");
-                }
-                break;
-                case 6:
-                    try {
-                    System.out.println("\n" + pilha.topBlack() + "\n");
-                } catch (EPilhaVazia e) {
-                    System.out.println("\nPilha Preta vazia!\n");
-                }
-                break;
+                    } catch (EPilhaVazia e) {
+                        System.out.println("\nPilha Vermelha vazia!\n");
+                    }
+                    break;
+                    case 6:
+                        try {
+                        System.out.println("\n" + pilha.topBlack() + "\n");
+                    } catch (EPilhaVazia e) {
+                        System.out.println("\nPilha Preta vazia!\n");
+                    }
+                    break;
                 case 7:
                     System.out.println("\n" + pilha.capacity() + "\n");
                     break;
