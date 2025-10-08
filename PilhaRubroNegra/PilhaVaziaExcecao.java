@@ -1,9 +1,9 @@
 package PilhaRubroNegra;
 
-class EPilhaVazia extends Exception {
+class PilhaVaziaExcecao extends RuntimeException {
 
     /*Exceção de pilha vazia no método embaixo*/
-    public EPilhaVazia(String msg) {
+    public PilhaVaziaExcecao(String msg) {
         super(msg);
     }
 }
