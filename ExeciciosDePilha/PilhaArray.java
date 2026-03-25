@@ -1,4 +1,5 @@
 public class PilhaArray {
+    // atributos e construtor
     private int capacidade;
     private Object[] a;
     private int t;
@@ -12,6 +13,7 @@ public class PilhaArray {
         a=new Object[capacidade];
     }
 
+    // Push == adicionar elemento na pilha
     public void push(Object o) {
         if(t>=capacidade-1){
             if(FC==0)
@@ -26,6 +28,7 @@ public class PilhaArray {
         a[++t]=o;
     }
 
+    // Pop == remover e retornar o último elemento adicionado na pilha
     public Object pop()throws PilhaVaziaExcecao {
         if(isEmpty())
             throw new PilhaVaziaExcecao("A Pilha está vazia");
@@ -33,16 +36,19 @@ public class PilhaArray {
         return r;
     }
 
+    // Top == retornar o último elemento adicionado na pilha sem removê-lo
     public Object top()throws PilhaVaziaExcecao {
         if(isEmpty())
             throw new PilhaVaziaExcecao("A Pilha está vazia");
         return a[t];
     }
 
+    // isEmpty == indicar se há ou não elementos na Pilha
     public boolean isEmpty(){
         return t==-1;
     }
 
+    // Size == retornar o número de lementos armazenados
     public int size(){
         return t+1;
     }
