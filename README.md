@@ -5,7 +5,7 @@ Repositório criado para a disciplina de Estrutura de Dados Lineares (EDL), onde
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/Franklin-Barbosa/EDL.git
+   git clone https://github.com/FranklinOlliver/EDL.git
     ```
 2. Navegue até a pasta da estrutura de dados que deseja executar:
     ```bash
